@@ -22,12 +22,15 @@ I am eager to contribute to team success through hard work and excellent organiz
 
 
 
-# Technical skills
+
+# <ins>Technical skills</ins>
 
 ## **HTML, CSS, SCSS, Vue.js, JavaScript, Bootstrap, Git, gulp, Responsive design, Figma, PhotoShop**
 
 
-# Experience
+
+
+# <ins>Experience</ins>
 
 #### - KRAI, UK (Cambridge) – front-end developer
 
@@ -36,6 +39,7 @@ I am eager to contribute to team success through hard work and excellent organiz
 - Short-term contract to develop website based on design requirements of new start-up 
 
 - Using JavaScript libraries: WOW,js, pagepiling.js
+
 
 
 #### - Unhar, USA (remote) – front-end developer
@@ -52,7 +56,8 @@ I am eager to contribute to team success through hard work and excellent organiz
 
 - Experience working with Scrum Teams.
 
-*Product was at the development and testing stage.*
+*<sup>Product was at the development and testing stage.</sup>*
+
 
 
 #### - TQM Systems, Ukraine (remote) – Content manager
@@ -66,6 +71,7 @@ I am eager to contribute to team success through hard work and excellent organiz
 - Creation of transcription and subtitles.
 
 - Writing short articles.
+
 
 
 #### - InterTAD, USA (remote) – Junior QA Engineer
@@ -84,7 +90,8 @@ I am eager to contribute to team success through hard work and excellent organiz
 
 
 
-# **Self-education**
+
+# <ins>**Self-education**</ins>
 2018 – 2020, HTML coding the sites:
 1. https://nikanorra.github.io/Nikanorra.styletour.github.io/
 2. https://nikanorra.github.io/wezom.github.io/
