@@ -1,0 +1,103 @@
+.container {
+    margin: 50px;
+}
+section,
+.self-development__links {
+    margin-bottom: 35px;
+}
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 20px;
+    height: 20px;
+    margin: 0 0 15px 0;
+    font-weight: 900;
+}
+h4{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+li {
+    margin-bottom: 5px;
+}
+.link {
+    color: #89B6C5;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* CONTACTS SECTION */
+.contacts {
+    display: flex; 
+    height: 271px;
+}
+.contacts>div>nav {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts>div>nav>ul>li {
+    margin-bottom: 10px;
+}
+.contacts>img {
+    margin-right: 20px;
+}
+
+/* INTRODUCTION SECTION */
+.introduction>* {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+/* SKILLS SECTION */
+.skills>nav>ul {
+    display: flex;
+}
+.skills>nav>ul>li {
+    margin: 10px 10px 10px 0;
+}
+
+/* CODE SECTION */
+.code {
+    background-color: rgb(57, 56, 56);
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+}
+code>p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.code__purple{
+ color: #B294BB;
+}
+.code__orange{
+    color: #DE935F;
+}
+.code__blue{
+    color: #89B6C5;
+}
+
+/* EXPERIENCE SECTION */
+.experience>nav>ul>li {
+    margin-bottom: 35px;
+}
+.experience_term {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+/* SELF-DEV SECTION */
+.self-development>p {
+    font-style: italic; 
+    margin-bottom: 10px;
+}
