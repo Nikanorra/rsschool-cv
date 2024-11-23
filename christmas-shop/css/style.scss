@@ -1,3 +1,112 @@
-body {
-    min-width: 1440px;
+// VARIABLES
+$color-primary: #FF4646;
+$color-white: #fff;
+$color-dark: #181C29;
+$color-purple: #4361FF;
+$color-green: #06A44F;
+$color-pink: #FF43F7;
+
+@mixin font-h1 {
+    font: {
+        family: Monserat;
+        size: 32px;
+        weight: 600;
+    }
+    line-height: 150%;
+    letter-spacing: 18%;
+    text-transform: uppercase;
+    color: $color-white;
 }
+
+ul, ul li {
+	list-style: none;
+}
+a {
+    text-decoration: none;
+  }
+
+body {
+    font-family: "Audiowide", sans-serif;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    align-items: start;
+}
+
+header {
+    grid-area: header;
+    height: 64px;
+    a {
+        color: $color-dark
+    }
+}
+
+main {
+    grid-area: main;
+    background-color: $color-primary;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+footer {
+    grid-area: footer;
+}
+
+.container {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+    gap: 20px;
+  }
+
+  .item {
+    background: lightgray;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+// HEADER
+.menu {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            .logo > a {
+                width: 141px;
+                padding: 8px 20px;
+                svg, span {
+                    vertical-align: middle;
+                }
+                span {
+                    line-height: 22px;
+                    margin-left: 9.66px;
+                    // display: inline-block;
+                }
+            }
+            li {
+                width: 100%;
+                cursor: pointer;
+                text-align: center;
+                > a {
+                    display: block;
+                    padding: 12px 20px;
+                    &:hover {
+                        border-radius: 3px;
+                        background-color: rgba(255, 70, 70, 0.1);
+                        color: #FF4646;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    // HERO PAGE
+    h1 { @include font-h1; }

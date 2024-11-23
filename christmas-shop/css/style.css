@@ -1,3 +1,90 @@
+ul, ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
-  min-width: 1440px;
+  font-family: "Audiowide", sans-serif;
+  width: 100%;
+  display: grid;
+  grid-template: 1fr/1fr;
+  grid-template-areas: "header" "main" "footer";
+  align-items: start;
+}
+
+header {
+  grid-area: header;
+  height: 64px;
+}
+header a {
+  color: #181C29;
+}
+
+main {
+  grid-area: main;
+  background-color: #FF4646;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.container {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+  gap: 20px;
+}
+
+.item {
+  background: lightgray;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.menu ul .logo > a {
+  width: 141px;
+  padding: 8px 20px;
+}
+.menu ul .logo > a svg, .menu ul .logo > a span {
+  vertical-align: middle;
+}
+.menu ul .logo > a span {
+  line-height: 22px;
+  margin-left: 9.66px;
+}
+.menu ul li {
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+.menu ul li > a {
+  display: block;
+  padding: 12px 20px;
+}
+.menu ul li > a:hover {
+  border-radius: 3px;
+  background-color: rgba(255, 70, 70, 0.1);
+  color: #FF4646;
+  transition: 0.3s;
+}
+
+h1 {
+  font-family: Monserat;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 18%;
+  text-transform: uppercase;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
