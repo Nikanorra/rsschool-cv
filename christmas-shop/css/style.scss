@@ -76,6 +76,13 @@ $color-pink: #FF43F7;
     }
 }
 
+@mixin slider-nav {
+    border: 1px $color-white solid;
+    border-radius: 15px;
+    width: 56px;
+    height: 56px;
+}
+
 
 ul, ul li {
 	list-style: none;
@@ -269,5 +276,13 @@ footer {
                     border-radius: 20px;
                 }
             }
+        }
+    }
+    .slider__nav {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        p {
+            @include slider-nav;
         }
     }

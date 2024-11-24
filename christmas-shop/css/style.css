@@ -236,4 +236,16 @@ footer {
   width: 200px;
   height: 200px;
   border-radius: 20px;
+}
+
+.slider__nav {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.slider__nav p {
+  border: 1px #fff solid;
+  border-radius: 15px;
+  width: 56px;
+  height: 56px;
 }/*# sourceMappingURL=style.css.map */
