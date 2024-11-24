@@ -29,9 +29,6 @@ header a {
 
 section {
   max-width: 1140px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
-  gap: 20px;
 }
 
 main {
@@ -98,7 +95,8 @@ footer {
 
 .hero {
   background-image: url(../img/bg-ball.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   height: 524px;
   display: flex;
@@ -144,4 +142,23 @@ footer {
 }
 .hero__wrap * {
   margin-bottom: 12px;
+}
+
+.about {
+  background-color: #fff;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about div {
+  padding: 160px 152px 160px 60px;
+  grid-column: 1/2;
+}
+.about img {
+  grid-column: 2/3;
+  border-radius: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-height: 100%;
 }/*# sourceMappingURL=style.css.map */
