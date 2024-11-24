@@ -8,14 +8,40 @@ $color-pink: #FF43F7;
 
 @mixin font-h1 {
     font: {
-        family: Monserat;
         size: 32px;
-        weight: 600;
+        weight: 500;
     }
     line-height: 150%;
-    letter-spacing: 18%;
+    letter-spacing: 4px;
     text-transform: uppercase;
     color: $color-white;
+    text-align: center;
+}
+
+@mixin font-christmas {
+    font: {
+        family: Allura;
+        size: 24px;
+        weight: 400;
+    }
+    line-height: 100%;
+    // letter-spacing: 12px;
+    color: $color-white;
+    text-align: center;
+}
+
+@mixin button-primary {
+    background-color: $color-dark;
+    padding: 20px 32px;
+    transition: .3s;
+    border-radius: 10px;
+    color: $color-white;
+    text-align: center;
+    display: inline-block;
+    &:hover {
+        background-color: $color-white;
+        color: $color-dark;
+    }
 }
 
 ul, ul li {
@@ -24,7 +50,10 @@ ul, ul li {
 a {
     text-decoration: none;
   }
-
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: "Audiowide", sans-serif;
     width: 100%;
@@ -48,8 +77,12 @@ header {
 main {
     grid-area: main;
     background-color: $color-primary;
+    background-image: url(../img/bg-snow.png);
+    background-repeat: repeat-y;
+    background-size: contain;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    height: 1000px;
 }
 footer {
     grid-area: footer;
@@ -84,7 +117,6 @@ footer {
                 span {
                     line-height: 22px;
                     margin-left: 9.66px;
-                    // display: inline-block;
                 }
             }
             li {
@@ -109,4 +141,26 @@ footer {
 
 
     // HERO PAGE
-    h1 { @include font-h1; }
+    .hero {
+        background-image: url(../img/bg-ball.png);
+        background-size: cover;
+        background-position: center;
+        height: 524px;
+        display: flex;
+        align-items: center;
+    }
+    .hero__wrap {
+        width: 426px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        h1 { @include font-h1; }
+        h2 { @include font-christmas; }
+        a {
+            @include button-primary;
+            align-self: center;
+        }
+        * {
+            margin-bottom: 12px;
+        }
+    }

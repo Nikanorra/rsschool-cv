@@ -6,6 +6,11 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Audiowide", sans-serif;
   width: 100%;
@@ -26,8 +31,12 @@ header a {
 main {
   grid-area: main;
   background-color: #FF4646;
+  background-image: url(../img/bg-snow.png);
+  background-repeat: repeat-y;
+  background-size: contain;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  height: 1000px;
 }
 
 footer {
@@ -79,12 +88,52 @@ footer {
   transition: 0.3s;
 }
 
-h1 {
-  font-family: Monserat;
+.hero {
+  background-image: url(../img/bg-ball.png);
+  background-size: cover;
+  background-position: center;
+  height: 524px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__wrap {
+  width: 426px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.hero__wrap h1 {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 150%;
-  letter-spacing: 18%;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: #fff;
+  text-align: center;
+}
+.hero__wrap h2 {
+  font-family: Allura;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #fff;
+  text-align: center;
+}
+.hero__wrap a {
+  background-color: #181C29;
+  padding: 20px 32px;
+  transition: 0.3s;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  align-self: center;
+}
+.hero__wrap a:hover {
+  background-color: #fff;
+  color: #181C29;
+}
+.hero__wrap * {
+  margin-bottom: 12px;
 }/*# sourceMappingURL=style.css.map */
