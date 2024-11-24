@@ -220,6 +220,7 @@ footer {
 
 .slider__wrap ul {
   display: flex;
+  width: 100%;
 }
 .slider__wrap ul li {
   display: flex;
@@ -260,4 +261,17 @@ footer {
 }
 .slider__nav p.inactive {
   opacity: 0.5;
+}
+
+.gifts_wrap ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 12px;
+}
+.gifts_wrap ul li {
+  background-color: #fff;
+  border-radius: 20px;
+}
+.gifts_wrap ul li img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
