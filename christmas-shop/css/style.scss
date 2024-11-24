@@ -63,7 +63,6 @@ body {
     "header"
     "main"
     "footer";
-    align-items: start;
 }
 
 header {
@@ -73,7 +72,12 @@ header {
         color: $color-dark
     }
 }
-
+section {
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+    gap: 20px;
+}
 main {
     grid-area: main;
     background-color: $color-primary;
@@ -82,7 +86,9 @@ main {
     background-size: contain;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    height: 1000px;
+    display: grid;
+    justify-content: center;
+    width: 100%;
 }
 footer {
     grid-area: footer;

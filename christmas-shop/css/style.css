@@ -17,7 +17,6 @@ body {
   display: grid;
   grid-template: 1fr/1fr;
   grid-template-areas: "header" "main" "footer";
-  align-items: start;
 }
 
 header {
@@ -28,6 +27,13 @@ header a {
   color: #181C29;
 }
 
+section {
+  max-width: 1140px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+  gap: 20px;
+}
+
 main {
   grid-area: main;
   background-color: #FF4646;
@@ -36,7 +42,9 @@ main {
   background-size: contain;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  height: 1000px;
+  display: grid;
+  justify-content: center;
+  width: 100%;
 }
 
 footer {
