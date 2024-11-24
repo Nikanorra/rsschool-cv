@@ -248,4 +248,16 @@ footer {
   border-radius: 15px;
   width: 56px;
   height: 56px;
+}
+.slider__nav p:nth-child(1) {
+  margin-right: 20px;
+}
+.slider__nav p:nth-child(1) svg {
+  transform: rotate(180deg);
+}
+.slider__nav p svg {
+  padding: 21px;
+}
+.slider__nav p.inactive {
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */
