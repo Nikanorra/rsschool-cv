@@ -18,6 +18,28 @@ $color-pink: #FF43F7;
     text-align: center;
 }
 
+@mixin font-h2 {
+    font: {
+        size: 24px;
+        weight: 600;
+    }
+    line-height: 152%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $color-white;
+    text-align: center;
+}
+
+@mixin font-p {
+    font: {
+        size: 16px;
+        weight: 400;
+    }
+    line-height: 148%;
+    color: $color-white;
+    text-align: center;
+}
+
 @mixin font-christmas {
     font: {
         family: Allura;
@@ -44,13 +66,14 @@ $color-pink: #FF43F7;
     }
 }
 
+
 ul, ul li {
 	list-style: none;
 }
 a {
     text-decoration: none;
   }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p {
     margin: 0;
     padding: 0;
 }
@@ -182,13 +205,30 @@ footer {
         div {
             padding: 160px 152px 160px 60px;
             grid-column: 1 / 2 ;
+            * {
+                padding-bottom: 20px;
+            }
+            h2 {
+                 @include font-christmas;
+                 text-align: left;
+                color: $color-primary;
+            }
+            p:nth-child(2) {
+                @include font-h2;
+                color: $color-dark;
+                text-align: left;
+            }
+            p:nth-child(3) {
+                @include font-p;
+                color: $color-dark;
+                text-align: left;
+            }
         }
         img {
             grid-column: 2 / 3;
             border-radius: 30px;
             object-fit: cover;
             width: 100%;
-            max-height: 100%;
-            // height: 100%;
+            height: 100%;
         }
     }
